@@ -19,6 +19,8 @@ button{cursor:pointer}
 .top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 28px;padding:16px 20px 14px;border-bottom:1px solid var(--line);background:var(--surface)}
 .title h1{margin:0;font-size:1.5rem;line-height:1.1;font-weight:700;font-stretch:80%;letter-spacing:-.01em}
 .title p{margin:4px 0 0;color:var(--muted);font-size:.87rem;max-width:62ch}
+.title p.credit{font-size:.75rem;margin-top:3px;max-width:none}
+.title p.credit strong{color:var(--ink);font-weight:600}
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-left:auto}
 .seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
 .seg button{border:0;background:transparent;padding:7px 12px;font-size:.87rem;line-height:1.15;text-align:left;border-right:1px solid var(--line)}
