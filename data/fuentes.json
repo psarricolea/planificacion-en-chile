@@ -1,0 +1,26 @@
+{
+  "paccc": {
+    "archivo": "dataset-paccc-comunas-2026-09-23.csv",
+    "fecha": "2026-09-23",
+    "nombre": "Cambio climático (PACCC)",
+    "institucion": "Ministerio del Medio Ambiente",
+    "url": "https://cambioclimatico.mma.gob.cl"
+  },
+  "rrd": {
+    "archivo": "RRD_01_09_2026.xlsx",
+    "fecha": "2026-09-01",
+    "nombre": "Riesgo de desastres (plan comunal RRD)",
+    "institucion": "SENAPRED",
+    "url": ""
+  },
+  "prc": {
+    "archivo": "instrumentos.csv",
+    "fecha": "2026-09-23",
+    "nombre": "Planes reguladores (PRC)",
+    "institucion": "MINVU, instrumentos de planificación territorial",
+    "url": ""
+  },
+  "geometria": {
+    "archivo": "comunas.geojson"
+  }
+}
