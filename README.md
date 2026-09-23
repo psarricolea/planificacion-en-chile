@@ -88,4 +88,6 @@ El visor solo necesita las propiedades `cut` (código comunal numérico) y `comu
 
 ## Créditos
 
+Diseño: Pablo Sarricolea, Departamento de Geografía, Universidad de Chile, y Centro de Ciencia del Clima y la Resiliencia (CR2).
+
 Mapa base © Esri, HERE, Garmin, © OpenStreetMap contributors. Datos: Ministerio del Medio Ambiente, SENAPRED y MINVU.
