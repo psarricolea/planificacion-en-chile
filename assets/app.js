@@ -136,13 +136,14 @@ const map = L.map("map", {preferCanvas:true, zoomSnap:0.25, minZoom:3, maxZoom:1
 map.attributionControl.setPrefix(false);
 map.createPane("labels"); map.getPane("labels").style.zIndex = 650; map.getPane("labels").style.pointerEvents = "none";
 const dark = window.matchMedia("(prefers-color-scheme: dark)");
-const ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
+const ATTR = 'Mapa base &copy; Esri, HERE, Garmin, &copy; colaboradores de OpenStreetMap';
 let base, labels;
 function setBase() {
   if (base) map.removeLayer(base); if (labels) map.removeLayer(labels);
-  const s = dark.matches ? "dark" : "light";
-  base = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${s}_nolabels/{z}/{x}/{y}{r}.png`, {subdomains:"abcd", maxZoom:19, attribution:ATTR}).addTo(map);
-  labels = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${s}_only_labels/{z}/{x}/{y}{r}.png`, {subdomains:"abcd", maxZoom:19, pane:"labels"}).addTo(map);
+  const s = dark.matches ? "Dark" : "Light";
+  const esri = n => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_${s}_Gray_${n}/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(esri("Base"), {maxZoom:16, attribution:ATTR}).addTo(map);
+  labels = L.tileLayer(esri("Reference"), {maxZoom:16, pane:"labels"}).addTo(map);
 }
 setBase();
 map.fitBounds(CONT);
