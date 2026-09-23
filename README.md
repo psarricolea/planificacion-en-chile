@@ -6,7 +6,7 @@ Visor web del estado de tres instrumentos de planificación en las 345 comunas d
 - **Plan comunal RRD**: Plan Comunal para la Reducción del Riesgo de Desastres (SENAPRED).
 - **PRC**: Plan Regulador Comunal (MINVU, instrumentos de planificación territorial).
 
-Es un sitio estático: HTML, CSS y JavaScript, con Leaflet y mapa base de OpenStreetMap/CARTO.
+Es un sitio estático: HTML, CSS y JavaScript, con Leaflet y mapa base gris de Esri (sin API key).
 No necesita servidor ni base de datos. El navegador lee los archivos originales de las fuentes desde `data/` y los procesa al cargar la página.
 
 ## Estructura
@@ -88,4 +88,4 @@ El visor solo necesita las propiedades `cut` (código comunal numérico) y `comu
 
 ## Créditos
 
-Mapa base © OpenStreetMap contributors © CARTO. Datos: Ministerio del Medio Ambiente, SENAPRED y MINVU.
+Mapa base © Esri, HERE, Garmin, © OpenStreetMap contributors. Datos: Ministerio del Medio Ambiente, SENAPRED y MINVU.
