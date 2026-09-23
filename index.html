@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Planificación en Chile</title>
+<meta name="description" content="Estado de los planes comunales de cambio climático, de reducción del riesgo de desastres y reguladores en Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="title">
+      <h1>Planificación en Chile</h1>
+      <p>Estado de los planes de cambio climático, de reducción del riesgo de desastres y reguladores en las 345 comunas del país.</p>
+    </div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Instrumento en el mapa">
+        <button data-layer="paccc" aria-pressed="true">Cambio climático<small>PACCC</small></button>
+        <button data-layer="rrd" aria-pressed="false">Riesgo de desastres<small>Plan comunal RRD</small></button>
+        <button data-layer="prc" aria-pressed="false">Plan regulador<small>PRC</small></button>
+        <button data-layer="all" aria-pressed="false">Los tres<small>Instrumentos al día</small></button>
+      </div>
+      <div class="search">
+        <input id="q" list="comunas" placeholder="Buscar comuna" aria-label="Buscar comuna" autocomplete="off">
+        <datalist id="comunas"></datalist>
+      </div>
+    </div>
+  </header>
+  <div class="stage">
+    <div class="mapwrap">
+      <div id="map" aria-label="Mapa de comunas de Chile"></div>
+      <div class="loading" id="loading">Cargando datos…</div>
+      <div class="jump" role="group" aria-label="Ir a">
+        <button data-jump="cont">Continente</button>
+        <button data-jump="jf">Juan Fernández</button>
+        <button data-jump="rn">Rapa Nui</button>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside class="side">
+      <section class="block det" id="detail" hidden></section>
+      <section class="block">
+        <h2>Por región, de norte a sur</h2>
+        <p class="lead" id="metric"></p>
+        <div class="regs" id="regs"></div>
+      </section>
+      <section class="block src">
+        <h2 style="color:var(--ink)">Fuentes</h2>
+        <ul id="sources"></ul>
+        <div class="actions">
+          <button class="btn" id="csv">Descargar tabla (CSV)</button>
+          <button class="btn ghost" id="openUpd">Probar archivos nuevos</button>
+        </div>
+      </section>
+    </aside>
+  </div>
+</div>
+<dialog id="upd">
+  <div class="dlg">
+    <h2>Probar archivos nuevos</h2>
+    <p>Revisa aquí las nuevas descargas antes de subirlas al repositorio. El visor reconoce cada archivo por sus columnas, te dice si alguna comuna no se pudo enlazar y te deja verlas en el mapa. Nada se guarda: para publicarlas, súbelas a la carpeta <code>data/</code> y actualiza <code>data/fuentes.json</code>.</p>
+    <label class="drop" id="drop">Arrastra los archivos aquí o elígelos
+      <input type="file" id="files" multiple accept=".csv,.xlsx,.xls,.txt">
+    </label>
+    <ul class="res" id="res"></ul>
+    <div class="actions">
+      <button class="btn ghost" id="cancelUpd">Cerrar</button>
+      <button class="btn" id="applyLocal" disabled>Ver en el mapa</button>
+    </div>
+  </div>
+</dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
