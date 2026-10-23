@@ -28,7 +28,17 @@ data/*.csv, *.xlsx    descargas originales de cada fuente
 3. En *Settings → Pages*, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
 4. En uno o dos minutos el visor queda en `https://<usuario>.github.io/planificacion-en-chile/`.
 
-## Actualizar los datos
+## Actualización automática y seguimiento
+
+Cada lunes, GitHub Actions corre `scripts/actualizar.mjs` (flujo `.github/workflows/actualizar.yml`):
+
+- **PACCC**: lee las 345 comunas del [visualizador del MMA](https://cambioclimatico.mma.gob.cl/planes-climaticos/comunales) y, si algo cambió, guarda un CSV nuevo `dataset-paccc-comunas-AAAA-MM-DD.csv` y actualiza `fuentes.json`.
+- **RRD y PRC**: se descargan solos solo si en `fuentes.json` la fuente tiene un campo `"descarga"` con la URL directa del archivo. Si no, se siguen actualizando a mano (pasos de abajo).
+- **Seguimiento**: cada vez que cambia una fecha de corte, agrega a `data/seguimiento.csv` una fila para Chile y una por región con comunas con PACCC aprobado, plan RRD con decreto, PRC al día, los tres al día y ninguno. Las actualizaciones manuales quedan registradas en la siguiente corrida.
+
+Para correrlo en el momento: pestaña *Actions → Actualizar datos → Run workflow*. Si falla (por ejemplo, porque el MMA cambió su página), GitHub te avisa por correo y el visor queda con los datos anteriores.
+
+## Actualizar los datos a mano
 
 1. Descarga el archivo nuevo desde la fuente, sin modificarlo.
 2. Súbelo a la carpeta `data/` del repositorio (*Add file → Upload files*).
