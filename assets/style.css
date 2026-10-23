@@ -150,3 +150,17 @@ dialog::backdrop{background:rgba(10,18,24,.45)}
 }
 @media (max-width:520px){.seg button small{display:none}.seg button{padding:8px 6px;text-align:center;font-size:.8rem}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Evolución */
+.trend svg{width:100%;height:auto;display:block;overflow:visible}
+.trend text{font-size:9.5px;fill:var(--muted);font-family:inherit}
+.trend .g{stroke:var(--line);stroke-width:.6}
+.trend .ln{fill:none;stroke:var(--focus);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.trend .pt{fill:var(--surface);stroke:var(--focus);stroke-width:2}
+.trend .delta{margin:0 0 6px;font-size:.88rem}
+.trend .delta b{font-size:1.15rem}
+.trend .up{color:#1B6A8A;font-weight:600}
+.trend .down{color:#A63D55;font-weight:600}
+.trend .hint{margin:6px 0 0;font-size:.74rem;color:var(--muted)}
+.trend a{color:var(--focus)}
+@media (prefers-color-scheme:dark){.trend .up{color:#7DB5C4}.trend .down{color:#E08D78}}

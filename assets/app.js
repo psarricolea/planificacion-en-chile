@@ -228,8 +228,37 @@ function renderRegions() {
       }
       if (bb) map.fitBounds(bb, {padding:[20,20]});
     }
-    renderRegions(); renderLegend();
+    renderRegions(); renderLegend(); renderTrend();
   }));
+}
+
+
+/* ---------- Evolución (data/seguimiento.csv) ---------- */
+let SEG = [];
+const SEG_COL = {paccc:"paccc_aprobado", rrd:"rrd_decreto", prc:"prc_al_dia", all:"tres_al_dia"};
+function renderTrend() {
+  const el = $("trend"); if (!el) return;
+  const region = state.reg ? REG_NAME[state.reg] : "Chile", col = SEG_COL[state.layer];
+  const pts = SEG.filter(r => r.region === region).map(r => ({f:iso(r.fecha_registro), n:+r[col], t:+r.comunas}))
+                 .filter(p => p.f && p.t).sort((a, b) => a.f - b.f);
+  $("trendLead").textContent = `${LAYERS[state.layer].metric.replace("Porcentaje de comunas", "Comunas")} ${region === "Chile" ? "En todo Chile" : "En " + region}, en cada corte de datos.`;
+  if (pts.length < 2) { el.innerHTML = `<p class="hint">El registro de seguimiento se completa con cada actualización semanal.</p>`; return; }
+  const W = 320, H = 150, L0 = 34, R0 = 12, T0 = 14, B0 = 26;
+  const t0 = +pts[0].f, t1 = +pts[pts.length - 1].f;
+  const x = d => L0 + (t1 === t0 ? 0 : (W - L0 - R0) * (+d - t0) / (t1 - t0));
+  const y = v => T0 + (H - T0 - B0) * (1 - v / 100);
+  const P = pts.map(p => ({...p, v:100 * p.n / p.t}));
+  const grid = [0, 25, 50, 75, 100].map(v => `<line x1="${L0}" x2="${W - R0}" y1="${y(v)}" y2="${y(v)}" class="g"/><text x="${L0 - 6}" y="${y(v) + 3}" text-anchor="end">${v}%</text>`).join("");
+  const line = `<polyline points="${P.map(p => `${x(p.f).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ")}" class="ln"/>`;
+  const fmt = d => d.toLocaleDateString("es-CL", {day:"numeric", month:"short"});
+  const dots = P.map((p, i) => `<circle cx="${x(p.f)}" cy="${y(p.v)}" r="3.5" class="pt"><title>${fdate(p.f)}: ${p.n} de ${p.t} comunas (${Math.round(p.v)}%)</title></circle>` +
+    ((i === 0 || i === P.length - 1 || P.length <= 6) ? `<text x="${x(p.f)}" y="${H - 8}" text-anchor="${i === 0 ? "start" : i === P.length - 1 ? "end" : "middle"}">${fmt(p.f)}</text>` : "")).join("");
+  const a = P[P.length - 2], b = P[P.length - 1], d = b.n - a.n;
+  const delta = d === 0 ? "sin cambios" : `${d > 0 ? "+" : "−"}${Math.abs(d)} comuna${Math.abs(d) === 1 ? "" : "s"}`;
+  el.innerHTML = `<p class="delta"><b>${b.n}</b> de ${b.t} comunas (${Math.round(b.v)}%) · <span class="${d > 0 ? "up" : d < 0 ? "down" : ""}">${delta}</span> desde el ${fdate(a.f)}</p>
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución en ${esc(region)}">${grid}${line}${dots}</svg>
+    ${state.layer === "all" && !state.strict ? `<p class="hint">La serie exige PRC de ${PRC_MAX_AGE} años o menos.</p>` : ""}
+    <p class="hint">Fuente: <a href="data/seguimiento.csv" download>data/seguimiento.csv</a>. Elige una región en la lista para ver su serie.</p>`;
 }
 
 /* ---------- Ficha comunal ---------- */
@@ -292,7 +321,7 @@ document.querySelectorAll("[data-layer]").forEach(b => b.addEventListener("click
   document.querySelectorAll("[data-layer]").forEach(x => x.setAttribute("aria-pressed", x === b));
   renderAll();
 }));
-function renderAll() { restyle(); renderLegend(); renderRegions(); renderDetail(); }
+function renderAll() { restyle(); renderLegend(); renderRegions(); renderTrend(); renderDetail(); }
 
 /* ---------- Exportar CSV ---------- */
 $("csv").addEventListener("click", () => {
@@ -360,6 +389,10 @@ async function init() {
     RAW[k] = r.rows;
     RAW.meta[k] = Object.assign({}, cfg[k], {fecha:cfg[k].fecha || toIso(r.fecha)});
   });
+  try {
+    const t = await (await fetch("data/seguimiento.csv", {cache:"no-cache"})).text();
+    SEG = Papa.parse(t.replace(/^\ufeff/, ""), {header:true, skipEmptyLines:true, delimiter:";"}).data;
+  } catch (e) { SEG = []; }
   D = process(RAW);
   const miss = Object.entries(D.miss).filter(([, s]) => s.size).map(([k, s]) => `${k}: ${[...s].join(", ")}`);
   if (miss.length) console.warn("Comunas sin enlazar →", miss.join(" | "));
