@@ -25,7 +25,10 @@ const ALIAS = {CABODEHORNOSYANTARTICACHILENA:"CABODEHORNOS", COYHAIQUE:"COIHAIQU
 
 const norm = s => String(s == null ? "" : s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace(/[^A-Z]/g, "");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const pdate = s => { const m = String(s || "").match(/(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})/); return m ? new Date(+m[3], +m[2]-1, +m[1]) : null; };
+/* Acepta DD-MM-AAAA, DD/MM/AAAA y AAAA-MM-DD (MINVU cambió a este último en oct. 2026) */
+const pdate = s => { const t = String(s || "");
+  let m = t.match(/(\d{4})[-\/](\d{1,2})[-\/](\d{1,2})/); if (m) return new Date(+m[1], +m[2]-1, +m[3]);
+  m = t.match(/(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})/); return m ? new Date(+m[3], +m[2]-1, +m[1]) : null; };
 const iso = s => { const m = String(s || "").match(/(\d{4})-(\d{2})-(\d{2})/); return m ? new Date(+m[1], +m[2]-1, +m[3]) : null; };
 const toIso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
 const fdate = d => d ? d.toLocaleDateString("es-CL", {day:"numeric", month:"short", year:"numeric"}) : "sin fecha";

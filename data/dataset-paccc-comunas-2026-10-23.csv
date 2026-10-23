@@ -3,14 +3,14 @@
 15102;Camarones;Arica;"Arica y Parinacota";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/306;
 15202;"General Lagos";Parinacota;"Arica y Parinacota";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/144;
 15201;Putre;Parinacota;"Arica y Parinacota";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/307;
-01107;"Alto Hospicio";Iquique;Tarapacá;"En proceso";;
+01107;"Alto Hospicio";Iquique;Tarapacá;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/511;
 01402;Camiña;"El Tamarugal";Tarapacá;"En proceso";;
 01403;Colchane;"El Tamarugal";Tarapacá;"Sin información";;
-01404;Huara;"El Tamarugal";Tarapacá;"En proceso";;
+01404;Huara;"El Tamarugal";Tarapacá;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/513;
 01101;Iquique;Iquique;Tarapacá;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/308;
-01405;Pica;"El Tamarugal";Tarapacá;"En proceso";;
+01405;Pica;"El Tamarugal";Tarapacá;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/512;
 01401;"Pozo Almonte";"El Tamarugal";Tarapacá;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/309;
-02101;Antofagasta;Antofagasta;Antofagasta;"En proceso";;
+02101;Antofagasta;Antofagasta;Antofagasta;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/514;
 02201;Calama;"El Loa";Antofagasta;"En proceso";;
 02302;"María Elena";Tocopilla;Antofagasta;"En proceso";;
 02102;Mejillones;Antofagasta;Antofagasta;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/310;
@@ -28,18 +28,18 @@
 03304;Huasco;Huasco;Atacama;"En proceso";;
 03103;"Tierra Amarilla";Copiapó;Atacama;"En proceso";;
 03301;Vallenar;Huasco;Atacama;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/312;https://cambioclimatico.mma.gob.cl/recursos/view/151
-04103;Andacollo;Elqui;Coquimbo;"En proceso";;
+04103;Andacollo;Elqui;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/462;
 04202;Canela;Choapa;Coquimbo;"En proceso";;
-04302;Combarbalá;Limarí;Coquimbo;"En proceso";;
-04102;Coquimbo;Elqui;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/303;
+04302;Combarbalá;Limarí;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/461;
+04102;Coquimbo;Elqui;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/531;
 04201;Illapel;Choapa;Coquimbo;"En proceso";;
-04104;"La Higuera";Elqui;Coquimbo;"En proceso";;
+04104;"La Higuera";Elqui;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/510;
 04101;"La Serena";Elqui;Coquimbo;"En proceso";;
 04203;"Los Vilos";Choapa;Coquimbo;"En proceso";;
 04303;"Monte Patria";Limarí;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/301;
 04301;Ovalle;Limarí;Coquimbo;"En proceso";;
 04105;Paiguano;Elqui;Coquimbo;"En proceso";;
-04304;Punitaqui;Limarí;Coquimbo;"En proceso";;
+04304;Punitaqui;Limarí;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/463;
 04305;"Río Hurtado";Limarí;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/299;
 04204;Salamanca;Choapa;Coquimbo;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/460;
 04106;Vicuña;Elqui;Coquimbo;"En proceso";;
@@ -113,12 +113,12 @@
 13404;Paine;Maipo;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/170;
 13121;"Pedro Aguirre Cerda";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/173;
 13605;Peñaflor;Talagante;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/174;
-13122;Peñalolén;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/297;
+13122;Peñalolén;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/517;
 13202;Pirque;Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/175;
 13123;Providencia;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/344;
 13124;Pudahuel;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/345;
-13201;"Puente Alto";Cordillera;Metropolitana;"En proceso";;
-13125;Quilicura;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/180;
+13201;"Puente Alto";Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/516;
+13125;Quilicura;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/518;
 13126;"Quinta Normal";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/179;
 13127;Recoleta;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/346;
 13128;Renca;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/347;
@@ -133,41 +133,41 @@
 13303;Tiltil;Chacabuco;Metropolitana;"En proceso";;
 13132;Vitacura;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/353;
 13120;Ñuñoa;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/168;
-06303;Chimbarongo;Colchagua;O'Higgins;"En proceso";;
+06303;Chimbarongo;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/464;https://cambioclimatico.mma.gob.cl/recursos/view/465
 06302;Chépica;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/250;
-06102;Codegua;Cachapoal;O'Higgins;"En proceso";;
-06103;Coinco;Cachapoal;O'Higgins;"En proceso";;
-06104;Coltauco;Cachapoal;O'Higgins;"En proceso";;
-06105;Doñihue;Cachapoal;O'Higgins;"En proceso";;
-06106;Graneros;Cachapoal;O'Higgins;"En proceso";;
-06202;"La Estrella";"Cardenal Caro";O'Higgins;"En proceso";;
-06107;"Las Cabras";Cachapoal;O'Higgins;"En proceso";;
+06102;Codegua;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/466;https://cambioclimatico.mma.gob.cl/recursos/view/467
+06103;Coinco;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/468;https://cambioclimatico.mma.gob.cl/recursos/view/469
+06104;Coltauco;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/470;https://cambioclimatico.mma.gob.cl/recursos/view/471
+06105;Doñihue;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/472;https://cambioclimatico.mma.gob.cl/recursos/view/473
+06106;Graneros;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/474;https://cambioclimatico.mma.gob.cl/recursos/view/475
+06202;"La Estrella";"Cardenal Caro";O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/476;
+06107;"Las Cabras";Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/477;https://cambioclimatico.mma.gob.cl/recursos/view/478
 06203;Litueche;"Cardenal Caro";O'Higgins;"En proceso";;
-06304;Lolol;Colchagua;O'Higgins;"En proceso";;
-06108;Machalí;Cachapoal;O'Higgins;"En proceso";;
+06304;Lolol;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/479;https://cambioclimatico.mma.gob.cl/recursos/view/480
+06108;Machalí;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/481;
 06109;Malloa;Cachapoal;O'Higgins;"En proceso";;
 06204;Marchihue;"Cardenal Caro";O'Higgins;"En proceso";;
-06110;Mostazal;Cachapoal;O'Higgins;"En proceso";;
-06305;Nancagua;Colchagua;O'Higgins;"En proceso";;
+06110;Mostazal;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/482;https://cambioclimatico.mma.gob.cl/recursos/view/483
+06305;Nancagua;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/484;https://cambioclimatico.mma.gob.cl/recursos/view/485
 06205;Navidad;"Cardenal Caro";O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/182;
-06111;Olivar;Cachapoal;O'Higgins;"En proceso";;
-06306;Palmilla;Colchagua;O'Higgins;"En proceso";;
+06111;Olivar;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/486;https://cambioclimatico.mma.gob.cl/recursos/view/487
+06306;Palmilla;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/488;https://cambioclimatico.mma.gob.cl/recursos/view/489
 06206;Paredones;"Cardenal Caro";O'Higgins;"En proceso";;
-06307;Peralillo;Colchagua;O'Higgins;"En proceso";;
-06112;Peumo;Cachapoal;O'Higgins;"En proceso";;
-06113;Pichidegua;Cachapoal;O'Higgins;"En proceso";;
+06307;Peralillo;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/490;https://cambioclimatico.mma.gob.cl/recursos/view/491
+06112;Peumo;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/492;https://cambioclimatico.mma.gob.cl/recursos/view/493
+06113;Pichidegua;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/494;https://cambioclimatico.mma.gob.cl/recursos/view/495
 06201;Pichilemu;"Cardenal Caro";O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/183;
 06308;Placilla;Colchagua;O'Higgins;"En proceso";;
 06309;Pumanque;Colchagua;O'Higgins;"En proceso";;
-06114;"Quinta de Tilcoco";Cachapoal;O'Higgins;"En proceso";;
+06114;"Quinta de Tilcoco";Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/496;https://cambioclimatico.mma.gob.cl/recursos/view/497
 06101;Rancagua;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/184;
 06115;Rengo;Cachapoal;O'Higgins;"En proceso";;
 06116;Requínoa;Cachapoal;O'Higgins;"En proceso";;
-06301;"San Fernando";Colchagua;O'Higgins;"En proceso";;
-06117;"San Vicente";Cachapoal;O'Higgins;"En proceso";;
-06310;"Santa Cruz";Colchagua;O'Higgins;"En proceso";;
+06301;"San Fernando";Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/498;https://cambioclimatico.mma.gob.cl/recursos/view/499
+06117;"San Vicente";Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/500;https://cambioclimatico.mma.gob.cl/recursos/view/501
+06310;"Santa Cruz";Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/502;https://cambioclimatico.mma.gob.cl/recursos/view/503
 07201;Cauquenes;Cauquenes;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/421;
-07202;Chanco;Cauquenes;Maule;"En proceso";;
+07202;Chanco;Cauquenes;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/523;
 07402;Colbún;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/422;
 07102;Constitución;Talca;Maule;"En proceso";;
 07103;Curepto;Talca;Maule;"En proceso";;
@@ -177,21 +177,21 @@
 07303;Licantén;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/426;
 07401;Linares;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/427;
 07403;Longaví;Linares;Maule;"En proceso";;
-07105;Maule;Talca;Maule;"Sin información";;
+07105;Maule;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/520;
 07304;Molina;Curicó;Maule;"Sin información";;
 07404;Parral;Linares;Maule;"En proceso";;
-07106;Pelarco;Talca;Maule;"En proceso";;
-07203;Pelluhue;Cauquenes;Maule;"En proceso";;
+07106;Pelarco;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/521;
+07203;Pelluhue;Cauquenes;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/524;
 07107;Pencahue;Talca;Maule;"Sin información";;
-07305;Rauco;Curicó;Maule;"En proceso";;
+07305;Rauco;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/525;
 07405;Retiro;Linares;Maule;"En proceso";;
 07306;Romeral;Curicó;Maule;"En proceso";;
 07108;"Río Claro";Talca;Maule;"Sin información";;
 07307;"Sagrada Familia";Curicó;Maule;"En proceso";;
-07109;"San Clemente";Talca;Maule;"En proceso";;
+07109;"San Clemente";Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/522;
 07406;"San Javier";Linares;Maule;"Sin información";;
 07110;"San Rafael";Talca;Maule;"Sin información";;
-07101;Talca;Talca;Maule;"En proceso";;
+07101;Talca;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/519;
 07308;Teno;Curicó;Maule;"En proceso";;
 07309;Vichuquén;Curicó;Maule;"Sin información";;
 07407;"Villa Alegre";Linares;Maule;"En proceso";;
@@ -207,7 +207,7 @@
 16105;Pemuco;Diguillín;Ñuble;"En proceso";;
 16106;Pinto;Diguillín;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/185;
 16205;Portezuelo;Punilla;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/393;
-16107;Quillón;Diguillín;Ñuble;"En proceso";;
+16107;Quillón;Diguillín;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/532;
 16201;Quirihue;Punilla;Ñuble;"En proceso";;
 16206;Ránquil;Punilla;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/186;
 16301;"San Carlos";Itata;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/187;
@@ -288,10 +288,10 @@
 14203;"Lago Ranco";Ranco;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/216;
 14103;Lanco;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/217;
 14104;"Los Lagos";Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/219;
-14106;Mariquina;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/211;
-14105;Máfil;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/212;
-14107;Paillaco;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/199;
-14108;Panguipulli;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/222;
+14106;Mariquina;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/528;
+14105;Máfil;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/527;
+14107;Paillaco;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/530;
+14108;Panguipulli;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/529;
 14204;"Río Bueno";Ranco;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/223;
 14101;Valdivia;Valdivia;"Los Ríos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/224;
 10202;Ancud;Chiloé;"Los Lagos";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/229;
@@ -335,12 +335,12 @@
 11402;"Río Ibáñez";"General Carrera";Aysén;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/230;
 11303;Tortel;"Capitán Prat";Aysén;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/231;
 12201;"Cabo de Hornos";"Antártica Chilena";Magallanes;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/428;
-12102;"Laguna Blanca";Magallanes;Magallanes;"Sin información";;
-12401;Natales;"Última Esperanza";Magallanes;"Sin información";;
-12301;Porvenir;"Tierra del Fuego";Magallanes;"Sin información";;
-12302;Primavera;"Tierra del Fuego";Magallanes;"Sin información";;
+12102;"Laguna Blanca";Magallanes;Magallanes;"En proceso";;
+12401;Natales;"Última Esperanza";Magallanes;"En proceso";;
+12301;Porvenir;"Tierra del Fuego";Magallanes;"En proceso";;
+12302;Primavera;"Tierra del Fuego";Magallanes;"En proceso";;
 12101;"Punta Arenas";Magallanes;Magallanes;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/236;
-12103;"Río Verde";Magallanes;Magallanes;"Sin información";;
+12103;"Río Verde";Magallanes;Magallanes;"En proceso";;
 12104;"San Gregorio";Magallanes;Magallanes;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/443;
-12303;Timaukel;"Tierra del Fuego";Magallanes;"Sin información";;
+12303;Timaukel;"Tierra del Fuego";Magallanes;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/526;https://cambioclimatico.mma.gob.cl/recursos/view/515
 12402;"Torres del Paine";"Última Esperanza";Magallanes;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/255;
