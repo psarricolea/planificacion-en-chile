@@ -239,9 +239,10 @@ const SEG_COL = {paccc:"paccc_aprobado", rrd:"rrd_decreto", prc:"prc_al_dia", al
 function renderTrend() {
   const el = $("trend"); if (!el) return;
   const region = state.reg ? REG_NAME[state.reg] : "Chile", col = SEG_COL[state.layer];
-  const pts = SEG.filter(r => r.region === region).map(r => ({f:iso(r.fecha_registro), n:+r[col], t:+r.comunas}))
+  const fc = {paccc:"fecha_paccc", rrd:"fecha_rrd", prc:"fecha_prc"}[state.layer] || "fecha_registro";
+  const pts = SEG.filter(r => r.region === region).map(r => ({f:iso(r[fc] || r.fecha_registro), n:+r[col], t:+r.comunas}))
                  .filter(p => p.f && p.t).sort((a, b) => a.f - b.f);
-  $("trendLead").textContent = `${LAYERS[state.layer].metric.replace("Porcentaje de comunas", "Comunas")} ${region === "Chile" ? "En todo Chile" : "En " + region}, en cada corte de datos.`;
+  $("trendLead").textContent = `${LAYERS[state.layer].metric.replace("Porcentaje de comunas", "Comunas")} ${region === "Chile" ? "En todo Chile" : "En " + region}, ${state.layer === "all" ? "según la fecha de registro" : "según la fecha de corte de la fuente"}.`;
   if (pts.length < 2) { el.innerHTML = `<p class="hint">El registro de seguimiento se completa con cada actualización semanal.</p>`; return; }
   const W = 320, H = 150, L0 = 34, R0 = 12, T0 = 14, B0 = 26;
   const t0 = +pts[0].f, t1 = +pts[pts.length - 1].f;
