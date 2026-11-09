@@ -33,7 +33,9 @@ data/*.csv, *.xlsx    descargas originales de cada fuente
 Cada lunes, GitHub Actions corre `scripts/actualizar.mjs` (flujo `.github/workflows/actualizar.yml`):
 
 - **PACCC**: lee las 345 comunas del [visualizador del MMA](https://cambioclimatico.mma.gob.cl/planes-climaticos/comunales) y, si algo cambió, guarda un CSV nuevo `dataset-paccc-comunas-AAAA-MM-DD.csv` y actualiza `fuentes.json`.
-- **RRD y PRC**: se descargan solos solo si en `fuentes.json` la fuente tiene un campo `"descarga"` con la URL directa del archivo. Si no, se siguen actualizando a mano (pasos de abajo).
+- **Plan comunal RRD**: lee el [Power BI público de SENAPRED](https://app.powerbi.com/view?r=eyJrIjoiZDY1NGIyOTUtNDdmZC00N2ZhLThkOTItYjZhYzE0NzUxZTA2IiwidCI6ImM0YzcwZTZhLWJmMWMtNGM1NS05ODYyLTU5YTVmM2FjODI1NyJ9) (`rrd.powerbi` en `fuentes.json`). Primero intenta la "Base de datos Planes RRD" que enlaza el propio informe (el Excel oficial, a veces dentro de un `.rar`); si no puede, arma un Excel con el mismo formato a partir de la tabla del informe (`rrd.tabla`), que trae el código CUT y el enlace al PDF del plan pero no la columna FINANCIAMIENTO. Si algo cambió, guarda `RRD_DD_MM_AAAA.xlsx` con la fecha de actualización de SENAPRED. La lectura del Power BI está en `scripts/powerbi.mjs`.
+- **PRC**: descarga el CSV de instrumentos de origen desde la API del [Portal IPT del MINVU](https://portalipt.minvu.cl/instrumentos) (`prc.api`), el mismo del botón "Descargar CSV" del buscador, y reemplaza `instrumentos.csv` si cambió.
+- Si una fuente falla, las otras se actualizan igual y el visor mantiene el último archivo bueno de la que falló.
 - **Seguimiento**: cada vez que cambia una fecha de corte, agrega a `data/seguimiento.csv` una fila para Chile y una por región con comunas con PACCC aprobado, plan RRD con decreto, PRC al día, los tres al día y ninguno. Las actualizaciones manuales quedan registradas en la siguiente corrida.
 
 Para correrlo en el momento: pestaña *Actions → Actualizar datos → Run workflow*. Si falla (por ejemplo, porque el MMA cambió su página), GitHub te avisa por correo y el visor queda con los datos anteriores.
@@ -55,7 +57,7 @@ Te dice cuántas filas leyó, si alguna comuna no se pudo enlazar y te deja ver 
 | Fuente | Formato | Columnas que usa |
 |---|---|---|
 | PACCC | CSV (`;` o `,`) | `cut_com`, `comuna`, `estado`, `plan_url`, `decreto_url` |
-| Plan comunal RRD | Excel | `Región`, `Comuna`, `Estado`, `Año`, `N° Decreto Alcaldicio`, `Estado de Revisión por Informe Técnico`, `FINANCIAMIENTO` |
+| Plan comunal RRD | Excel | `Región`, `Comuna`, `Estado`, `Año`, `N° Decreto Alcaldicio`, `Estado de Revisión por Informe Técnico`, `FINANCIAMIENTO` (opcionales: `CUT`, que tiene prioridad sobre el nombre para enlazar la comuna, y `Enlace` al PDF del plan) |
 | PRC | CSV (`;`) | `Comunas`, `Tipo de planificación`, `Denominación`, `Estado`, `Fecha de inicio de vigencia` |
 
 Si una fuente cambia el nombre de una comuna (por ejemplo "Coyhaique" y "Coihaique"), agrega la equivalencia en el objeto `ALIAS` de `assets/app.js`.

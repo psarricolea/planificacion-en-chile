@@ -11,14 +11,17 @@
     "fecha": "2026-10-02",
     "nombre": "Riesgo de desastres (plan comunal RRD)",
     "institucion": "SENAPRED",
-    "url": ""
+    "url": "https://app.powerbi.com/view?r=eyJrIjoiZDY1NGIyOTUtNDdmZC00N2ZhLThkOTItYjZhYzE0NzUxZTA2IiwidCI6ImM0YzcwZTZhLWJmMWMtNGM1NS05ODYyLTU5YTVmM2FjODI1NyJ9",
+    "powerbi": "https://app.powerbi.com/view?r=eyJrIjoiZDY1NGIyOTUtNDdmZC00N2ZhLThkOTItYjZhYzE0NzUxZTA2IiwidCI6ImM0YzcwZTZhLWJmMWMtNGM1NS05ODYyLTU5YTVmM2FjODI1NyJ9",
+    "tabla": "Tabla53"
   },
   "prc": {
     "archivo": "instrumentos.csv",
     "fecha": "2026-10-23",
     "nombre": "Planes reguladores (PRC)",
     "institucion": "MINVU, instrumentos de planificación territorial",
-    "url": ""
+    "url": "https://portalipt.minvu.cl/instrumentos",
+    "api": "https://portalipt-api.minvu.cl/instrumentos"
   },
   "geometria": {
     "archivo": "comunas.geojson"

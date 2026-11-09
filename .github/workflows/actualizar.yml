@@ -22,6 +22,9 @@ jobs:
           node-version: 20
       - name: Instalar dependencias
         run: npm install --no-save --no-package-lock xlsx@0.18.5 papaparse@5.4.1
+      - name: Instalar unrar (base de datos RRD de SENAPRED viene en .rar)
+        continue-on-error: true
+        run: sudo apt-get install -y -qq unrar || sudo apt-get install -y -qq unrar-free
       - name: Descargar fuentes y registrar seguimiento
         run: node scripts/actualizar.mjs
       - name: Publicar cambios

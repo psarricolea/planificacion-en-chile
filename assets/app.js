@@ -55,7 +55,8 @@ function parseSource(name, buf, fallbackDate) {
     if (hi < 0) throw new Error("No encontré una fila de encabezado con la columna “Comuna”.");
     const H = rows[hi].map(norm), col = f => H.findIndex(f);
     const ix = {region:col(h=>h.startsWith("REGION")), comuna:col(h=>h==="COMUNA"), estado:col(h=>h==="ESTADO"), anio:col(h=>h.startsWith("ANO")),
-                decreto:col(h=>h.includes("DECRETO")), revision:col(h=>h.includes("REVISION")), financiamiento:col(h=>h.includes("FINANC"))};
+                decreto:col(h=>h.includes("DECRETO")), revision:col(h=>h.includes("REVISION")), financiamiento:col(h=>h.includes("FINANC")),
+                cut:col(h=>h==="CUT"||h==="CUTCOM"), enlace:col(h=>h==="ENLACE")};
     if (ix.estado < 0 || ix.revision < 0) throw new Error("El Excel no tiene las columnas “Estado” y “Estado de Revisión” del formato RRD.");
     let fecha = null;
     for (const r of rows.slice(0, hi)) { for (const v of r) { const d = pdate(v); if (d) { fecha = d; break; } } if (fecha) break; }
@@ -98,7 +99,7 @@ function process(raw) {
   const find = n => { const k = norm(n); return idx.has(k) ? idx.get(k) : idx.get(ALIAS[k]); };
   const miss = {paccc:new Set(), rrd:new Set(), prc:new Set()};
   for (const r of raw.paccc) { const c = C.get(+r.cut_com); if (!c) { miss.paccc.add(r.comuna || r.cut_com); continue; } c.pacccRow = r; }
-  for (const r of raw.rrd) { const cod = find(r.comuna); if (cod == null) { miss.rrd.add(r.comuna); continue; } C.get(cod).rrdRow = r; }
+  for (const r of raw.rrd) { const cod = C.has(+r.cut) ? +r.cut : find(r.comuna); if (cod == null) { miss.rrd.add(r.comuna); continue; } C.get(cod).rrdRow = r; }
   for (const r of raw.prc) for (const n of String(r.comunas || "").split(",")) {
     const t = n.trim(); if (!t) continue;
     const cod = find(t); if (cod == null) { miss.prc.add(t); continue; }
@@ -276,7 +277,7 @@ function renderDetail() {
   <div class="det-head"><div><h2>${esc(c.name)}</h2><p>Región de ${esc(REG_NAME[c.reg] || "")}, código CUT ${c.cod}</p></div><button class="x" id="closeDet" aria-label="Cerrar ficha">×</button></div>
   <div class="score" aria-label="${s} de 3 instrumentos al día">${[0,1,2].map(i => `<i class="${i < s ? "on" : ""}"></i>`).join("")}<span>${s} de 3 instrumentos al día</span></div>
   <div class="inst"><h3>Plan de Acción Comunal de Cambio Climático</h3>${chip("paccc", c.paccc)}${links ? `<div class="links">${links}</div>` : ""}</div>
-  <div class="inst"><h3>Plan Comunal para la Reducción del Riesgo de Desastres</h3>${chip("rrd", c.rrd)}
+  <div class="inst"><h3>Plan Comunal para la Reducción del Riesgo de Desastres</h3>${chip("rrd", c.rrd)}${r && link(r.enlace, "Ver plan") ? `<div class="links">${link(r.enlace, "Ver plan")}</div>` : ""}
     ${r ? `<dl>${val(r.anio) ? `<dt>Año</dt><dd>${esc(r.anio)}</dd>` : ""}${val(r.decreto) ? `<dt>Decreto</dt><dd>N° ${esc(r.decreto)}</dd>` : ""}<dt>Revisión técnica</dt><dd>${esc(r.revision || "Sin dato")}</dd>${r.financiamiento ? `<dt>Financiamiento</dt><dd>${esc(r.financiamiento)}</dd>` : ""}</dl>` : ""}</div>
   <div class="inst"><h3>Plan Regulador Comunal</h3>${chip("prc", c.prc)}
     ${c.prcLatest ? `<dl><dt>Último vigente</dt><dd>${fdate(c.prcLatest)} (${Math.floor(c.prcAge)} años)</dd></dl>` : ""}
