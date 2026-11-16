@@ -142,7 +142,7 @@
 06106;Graneros;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/474;https://cambioclimatico.mma.gob.cl/recursos/view/475
 06202;"La Estrella";"Cardenal Caro";O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/476;
 06107;"Las Cabras";Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/477;https://cambioclimatico.mma.gob.cl/recursos/view/478
-06203;Litueche;"Cardenal Caro";O'Higgins;"En proceso";;
+06203;Litueche;"Cardenal Caro";O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/572;https://cambioclimatico.mma.gob.cl/recursos/view/573
 06304;Lolol;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/479;https://cambioclimatico.mma.gob.cl/recursos/view/480
 06108;Machalí;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/481;
 06109;Malloa;Cachapoal;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/534;https://cambioclimatico.mma.gob.cl/recursos/view/535
@@ -168,15 +168,15 @@
 06310;"Santa Cruz";Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/502;https://cambioclimatico.mma.gob.cl/recursos/view/503
 07201;Cauquenes;Cauquenes;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/421;https://cambioclimatico.mma.gob.cl/recursos/view/540
 07202;Chanco;Cauquenes;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/523;https://cambioclimatico.mma.gob.cl/recursos/view/541
-07402;Colbún;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/422;
+07402;Colbún;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/422;https://cambioclimatico.mma.gob.cl/recursos/view/561
 07102;Constitución;Talca;Maule;"En proceso";;
 07103;Curepto;Talca;Maule;"En proceso";;
 07301;Curicó;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/423;https://cambioclimatico.mma.gob.cl/recursos/view/542
 07104;Empedrado;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/551;https://cambioclimatico.mma.gob.cl/recursos/view/552
 07302;Hualañé;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/425;https://cambioclimatico.mma.gob.cl/recursos/view/543
-07303;Licantén;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/426;
+07303;Licantén;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/426;https://cambioclimatico.mma.gob.cl/recursos/view/562
 07401;Linares;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/427;https://cambioclimatico.mma.gob.cl/recursos/view/544
-07403;Longaví;Linares;Maule;"En proceso";;
+07403;Longaví;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/574;https://cambioclimatico.mma.gob.cl/recursos/view/575
 07105;Maule;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/520;https://cambioclimatico.mma.gob.cl/recursos/view/545
 07304;Molina;Curicó;Maule;"Sin información";;
 07404;Parral;Linares;Maule;"En proceso";;
@@ -185,17 +185,17 @@
 07107;Pencahue;Talca;Maule;"Sin información";;
 07305;Rauco;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/525;https://cambioclimatico.mma.gob.cl/recursos/view/548
 07405;Retiro;Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/553;https://cambioclimatico.mma.gob.cl/recursos/view/554
-07306;Romeral;Curicó;Maule;"En proceso";;
+07306;Romeral;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/567;https://cambioclimatico.mma.gob.cl/recursos/view/568
 07108;"Río Claro";Talca;Maule;"Sin información";;
 07307;"Sagrada Familia";Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/555;https://cambioclimatico.mma.gob.cl/recursos/view/556
 07109;"San Clemente";Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/522;https://cambioclimatico.mma.gob.cl/recursos/view/549
 07406;"San Javier";Linares;Maule;"Sin información";;
-07110;"San Rafael";Talca;Maule;"Sin información";;
+07110;"San Rafael";Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/569;https://cambioclimatico.mma.gob.cl/recursos/view/570
 07101;Talca;Talca;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/519;https://cambioclimatico.mma.gob.cl/recursos/view/550
 07308;Teno;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/557;https://cambioclimatico.mma.gob.cl/recursos/view/558
-07309;Vichuquén;Curicó;Maule;"Sin información";;
+07309;Vichuquén;Curicó;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/563;https://cambioclimatico.mma.gob.cl/recursos/view/564
 07407;"Villa Alegre";Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/559;https://cambioclimatico.mma.gob.cl/recursos/view/560
-07408;"Yerbas Buenas";Linares;Maule;"En proceso";;
+07408;"Yerbas Buenas";Linares;Maule;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/565;https://cambioclimatico.mma.gob.cl/recursos/view/566
 16102;Bulnes;Diguillín;Ñuble;"En proceso";;
 16101;Chillán;Diguillín;Ñuble;"En proceso";;
 16103;"Chillán Viejo";Diguillín;Ñuble;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/390;
@@ -250,15 +250,15 @@
 08111;Tomé;Concepción;Biobío;"En proceso";;
 08312;Tucapel;"Bio Bío";Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/361;
 08313;Yumbel;"Bio Bío";Biobío;"En proceso";;
-09201;Angol;Malleco;"La Araucanía";"En proceso";;
-09102;Carahue;Cautín;"La Araucanía";"En proceso";;
+09201;Angol;Malleco;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/581;https://cambioclimatico.mma.gob.cl/recursos/view/582
+09102;Carahue;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/576;https://cambioclimatico.mma.gob.cl/recursos/view/579
 09121;Cholchol;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/399;https://cambioclimatico.mma.gob.cl/recursos/view/190
-09202;Collipulli;Malleco;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/362;
+09202;Collipulli;Malleco;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/362;https://cambioclimatico.mma.gob.cl/recursos/view/580
 09103;Cunco;Cautín;"La Araucanía";"En proceso";;
-09203;Curacautín;Malleco;"La Araucanía";"En proceso";;
+09203;Curacautín;Malleco;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/577;https://cambioclimatico.mma.gob.cl/recursos/view/578
 09104;Curarrehue;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/363;
 09204;Ercilla;Malleco;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/252;
-09105;Freire;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/398;
+09105;Freire;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/398;https://cambioclimatico.mma.gob.cl/recursos/view/583
 09106;Galvarino;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/364;
 09107;Gorbea;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/191;
 09108;Lautaro;Cautín;"La Araucanía";Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/193;
