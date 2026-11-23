@@ -84,7 +84,7 @@
 13502;Alhué;Melipilla;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/400;
 13402;Buin;Maipo;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/147;
 13403;"Calera de Tango";Maipo;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/149;
-13102;Cerrillos;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/331;
+13102;Cerrillos;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/331;https://cambioclimatico.mma.gob.cl/recursos/view/590
 13103;"Cerro Navia";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/150;
 13301;Colina;Chacabuco;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/295;
 13104;Conchalí;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/334;
@@ -95,14 +95,14 @@
 13107;Huechuraba;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/333;
 13108;Independencia;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/337;
 13603;"Isla de Maipo";Talagante;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/156;
-13109;"La Cisterna";Santiago;Metropolitana;"En proceso";;
+13109;"La Cisterna";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/599;
 13110;"La Florida";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/339;
 13111;"La Granja";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/157;
 13112;"La Pintana";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/335;
 13113;"La Reina";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/158;
 13302;Lampa;Chacabuco;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/159;
 13114;"Las Condes";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/456;
-13115;"Lo Barnechea";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/165;
+13115;"Lo Barnechea";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/165;https://cambioclimatico.mma.gob.cl/recursos/view/591
 13116;"Lo Espejo";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/166;
 13117;"Lo Prado";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/340;
 13118;Macul;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/338;
@@ -114,23 +114,23 @@
 13121;"Pedro Aguirre Cerda";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/173;
 13605;Peñaflor;Talagante;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/174;
 13122;Peñalolén;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/517;
-13202;Pirque;Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/175;
+13202;Pirque;Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/175;https://cambioclimatico.mma.gob.cl/recursos/view/593
 13123;Providencia;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/344;
 13124;Pudahuel;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/345;
-13201;"Puente Alto";Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/516;
+13201;"Puente Alto";Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/516;https://cambioclimatico.mma.gob.cl/recursos/view/594
 13125;Quilicura;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/518;
 13126;"Quinta Normal";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/179;
 13127;Recoleta;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/346;
 13128;Renca;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/347;
 13401;"San Bernardo";Maipo;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/349;
 13129;"San Joaquín";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/350;
-13203;"San José de Maipo";Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/298;
-13130;"San Miguel";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/343;
+13203;"San José de Maipo";Cordillera;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/298;https://cambioclimatico.mma.gob.cl/recursos/view/592
+13130;"San Miguel";Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/343;https://cambioclimatico.mma.gob.cl/recursos/view/589
 13505;"San Pedro";Melipilla;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/351;
 13131;"San Ramón";Santiago;Metropolitana;"En proceso";;
 13101;Santiago;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/330;
 13601;Talagante;Talagante;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/352;
-13303;Tiltil;Chacabuco;Metropolitana;"En proceso";;
+13303;Tiltil;Chacabuco;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/586;https://cambioclimatico.mma.gob.cl/recursos/view/587
 13132;Vitacura;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/353;
 13120;Ñuñoa;Santiago;Metropolitana;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/168;
 06303;Chimbarongo;Colchagua;O'Higgins;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/464;https://cambioclimatico.mma.gob.cl/recursos/view/465
@@ -220,17 +220,17 @@
 08314;"Alto Biobío";"Bio Bío";Biobío;"En proceso";;
 08302;Antuco;"Bio Bío";Biobío;"En proceso";;
 08202;Arauco;Arauco;Biobío;"En proceso";;
-08303;Cabrero;"Bio Bío";Biobío;"En proceso";;
-08203;Cañete;Arauco;Biobío;"En proceso";;
+08303;Cabrero;"Bio Bío";Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/584;https://cambioclimatico.mma.gob.cl/recursos/view/585
+08203;Cañete;Arauco;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/588;
 08103;Chiguayante;Concepción;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/192;
 08101;Concepción;Concepción;Biobío;"En proceso";;
-08204;Contulmo;Arauco;Biobío;"En proceso";;
+08204;Contulmo;Arauco;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/595;https://cambioclimatico.mma.gob.cl/recursos/view/596
 08102;Coronel;Concepción;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/355;
 08205;Curanilahue;Arauco;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/194;
-08104;Florida;Concepción;Biobío;"En proceso";;
+08104;Florida;Concepción;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/597;https://cambioclimatico.mma.gob.cl/recursos/view/598
 08112;Hualpén;Concepción;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/356;
-08105;Hualqui;Concepción;Biobío;"En proceso";;
-08304;Laja;"Bio Bío";Biobío;"En proceso";;
+08105;Hualqui;Concepción;Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/600;https://cambioclimatico.mma.gob.cl/recursos/view/601
+08304;Laja;"Bio Bío";Biobío;Aprobado;https://cambioclimatico.mma.gob.cl/recursos/view/602;
 08201;Lebu;Arauco;Biobío;"En proceso";;
 08206;"Los Álamos";Arauco;Biobío;"En proceso";;
 08301;"Los Ángeles";"Bio Bío";Biobío;"En proceso";;
